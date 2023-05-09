@@ -1,0 +1,234 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(this.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+/* İSİM */
+
+header {
+    margin: 2% 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header>h1 {
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 50px;
+    color: #00FF00;
+    text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 70px #00FF00, 0 0 120px #00FF00, 0 0 170px #00FF00;
+}
+
+/* SLIDE BAR */
+.slideBar {
+    /* border: 2px solid #00FF00; */
+    padding: 27px 20px;
+    border-radius: 25px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.kay {
+    color: rgb(0, 225, 255);
+    text-shadow: 0 0 5px rgb(0, 225, 255), 0 0 10px rgb(0, 225, 255), 0 0 20px rgb(0, 225, 255), 0 0 30px rgb(0, 225, 255), 0 0 40px rgba(0, 225, 255, 0.4), 0 0 70px rgba(0, 225, 255, 0.4), 0 0 80px rgba(0, 225, 255, 0.4), 0 0 100px rgba(0, 225, 255, 0.4);
+    animation: yanipSonen 10s ease-in-out infinite;
+}
+
+@keyframes yanipSonen {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        text-shadow: 0 0 5px rgb(0, 225, 255), 0 0 10px rgb(0, 225, 255), 0 0 20px rgb(0, 225, 255), 0 0 30px rgb(0, 225, 255), 0 0 40px rgba(0, 225, 255, 0.4), 0 0 70px rgba(0, 225, 255, 0.4), 0 0 80px rgba(0, 225, 255, 0.4), 0 0 100px rgba(0, 225, 255, 0.4);
+        opacity: 100%;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    100% {
+        opacity: 0%;
+        text-shadow: none;
+    }
+}
+
+/* ÖZET YAZI */
+.summary {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 01%;
+    color: #FFF0B3;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0 0 10px #FFF0B3;
+    line-height: 40px;
+}
+
+/* İLETİŞİM */
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.navCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.navCard>a>p {
+    font-size: 40px;
+}
+
+.lnk {
+    color: #004cff;
+    animation: glow 6s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0% {}
+
+    50% {
+        text-shadow:
+            0 0 30px #004cff,
+            0 0 40px #004cff,
+            0 0 70px #004cff,
+            0 0 90px #004cff,
+            0 0 120px #004cff,
+            0 0 170px #004cff;
+    }
+
+    100% {}
+}
+
+.git {
+    color: #ea00ff;
+    animation: glowg 6s ease-in-out infinite;
+}
+
+@keyframes glowg {
+    0% {}
+
+    50% {
+        text-shadow:
+            0 0 30px #ea00ff,
+            0 0 40px #ea00ff,
+            0 0 70px #ea00ff,
+            0 0 90px #ea00ff,
+            0 0 120px #ea00ff,
+            0 0 170px #ea00ff;
+    }
+
+    100% {}
+}
+
+.twt {
+    color: #ffae00;
+    animation: glowt 6s ease-in-out infinite;
+}
+
+@keyframes glowt {
+    0% {}
+
+    50% {
+        text-shadow:
+            0 0 30px #ffae00,
+            0 0 40px #ffae00,
+            0 0 70px #ffae00,
+            0 0 90px #ffae00,
+            0 0 120px #ffae00,
+            0 0 170px #ffae00;
+    }
+
+    100% {}
+}
+
+
+/* burayı iconları fixlemek ve linklemek için açtım */
+.navCard>a {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+/* PROJECT */
+
+.project {
+    color: #00FF00;
+    font-family: 'Bruno Ace SC', cursive;
+    letter-spacing: 100px;
+    font-size: 20px;
+    text-align: center ;
+    margin-top: 70px;
+}
+
+.hr {
+    border-bottom: #00FF00 solid 1px;
+    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 70px #00FF00, 0 0 120px #00FF00, 0 0 170px #00FF00;
+}
+
+.card {
+    font-family: 'Oswald', sans-serif;
+    border: #440369 1px solid;
+    color: #FFF0B3;
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 65% 30%;
+    gap: 5%;
+    padding: 20px;
+    transition: all 3s;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #ea00ff11;
+}
+
+.card:visited {
+    color: #FFF0B3;
+}
+
+.card:hover{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    border: none;
+    color: #ffae00;
+}
+
+img {
+    width: 100%;
+}
+
+/* FOOTER */
+
+.ftr {
+    color: rgb(255, 94, 0);
+    text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(255, 0, 0), 0 0 70px rgb(255, 0, 0), 0 0 120px rgb(255, 0, 0);
+    margin: 0px auto;
+    margin-top: auto;
+}
